@@ -68,11 +68,11 @@ function render()
 
 	healthBar.x = game.camera.x + 10;
 	healthBar.y = game.camera.y + 10;
-
+	healthBar.width = player.health / player.maxHealth * healthBar.initialWidth;
+	
+	// Debug
 	debugLabel.x = game.camera.x + 10;
 	debugLabel.y = game.camera.y + 90;
-
-	healthBar.width = player.health / player.maxHealth * healthBar.initialWidth;
 }
 
 function HandleInput()
@@ -97,6 +97,7 @@ function HandleInput()
 		player.body.moveRight(300);
 	}
 
+	// DEBUG
 	if(healthUp.isDown)
 	{
 		if(player.health < 100)
