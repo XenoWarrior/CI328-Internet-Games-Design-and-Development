@@ -16,12 +16,9 @@ html, head, body{
 	height: 100%;
 	width: 100%;
 
-	transition: all ease-out .25s;
 }
 	.background{
 		background: rgba(0, 0, 0, .5);
-
-		transition: all ease-out .25s;
 	}
 
 .menu-container{
